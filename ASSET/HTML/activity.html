@@ -1,27 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="ASSET/CSS/bootstrap.css" />
-    <title>Shopping List</title>
-  </head>
-  <body>
-    <div class="container mt-5">
-      <h2>Shopping List App</h2>
-
-    <!-- Input -->
-    <div class="input-group mb-3">
-        <input type="text" id="itemInput" class="form-control" />
-        <div class="input-group-append">
-          <button class="btn btn-primary" id="addItemBtn">Add to Cart</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <style>
+         .container{
+        max-width: 1000px;
+        margin-top: 1%;
+      }
+      .row{
+        gap: 25px;
+        margin-bottom: 25px;
+      }
+      .sample {
+        background: paleturquoise;
+        color: white !important;
+        border: 1px solid black;
+        border-bottom-right-radius: 30px;
+        width: 230px;
+        height: 280px;
+        margin: auto;
+      }
+      button{
+        background: palegoldenrod;
+      }
+      .inner img{
+        transition: all 1.5s ease;
+      }
+      .inner:hover img {
+        transform: scale(1.5);
+      }
+      #gallery-modal .modal-img{
+        width: 100%;
+      }
+      h5, p{
+        color: black;
+      }
+    </style>
+</head>
+<body>
+    <div class="container gallery-modal">
+        <div class="row ">
+            <div class="col-lg-3 text-center sample shadow">
+              <div class="inner"><img src="/ASSET/images.jpeg"alt=""class="d-block mx-auto h-50 w-60 img-fluid mt-3 rounded "/></div>
+                    <h5 class="mt-4 mb-1">Rice</h5>
+                    <p class="mb-1">₱50.00</p>
+                    <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
+              </div>
+              <div class="col-lg-3 text-center sample shadow">
+                <div class="inner"><img src="/ASSET/images.jpeg"alt=""class="d-block mx-auto h-50 w-60 img-fluid mt-3 rounded"/></div>
+                      <h5 class="mt-4 mb-1">Chicken</h5>
+                      <p class="mb-1">₱130.00</p>
+                      <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
+                </div>
+                <div class="col-lg-3 text-center sample shadow">
+                  <div class="inner"><img src="/ASSET/images.jpeg"alt=""class="d-block mx-auto h-50 w-60 img-fluid mt-3 rounded"/></div>
+                        <h5 class="mt-4 mb-1">Vegetable</h5>
+                        <p class="mb-1">₱30.00</p>
+                        <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
+                  </div>
+                  <div class="col-lg-3 text-center sample shadow">
+                    <div class="inner"><img src="/ASSET/images.jpeg"alt=""class="d-block mx-auto h-50 w-60 img-fluid mt-3 rounded"/></div>
+                          <h5 class="mt-4 mb-1">Beef</h5>
+                          <p class="mb-1">₱200.00</p>
+                          <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
+                    </div>
         </div>
+        <div class="row ">
+          <div class="col-lg-3 text-center sample shadow">
+            <div class="inner"><img src="/ASSET/images.jpeg"alt=""class="d-block mx-auto h-50 w-60 img-fluid mt-3 rounded"/></div>
+                  <h5 class="mt-4 mb-1">Burger</h5>
+                  <p class="mb-1">₱30.00</p>
+                  <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
+            </div>
+            <div class="col-lg-3 text-center sample shadow">
+              <div class="inner"><img src="/ASSET/images.jpeg"alt=""class="d-block mx-auto h-50 w-60 img-fluid mt-3 rounded"/></div>
+                    <h5 class="mt-4 mb-1">Fries</h5>
+                    <p class="mb-1">₱30.00</p>
+                    <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
+              </div>
+              <div class="col-lg-3 text-center sample shadow">
+                <div class="inner"><img src="/ASSET/images.jpeg"alt=""class="d-block mx-auto h-50 w-60 img-fluid mt-3 rounded"/></div>
+                      <h5 class="mt-4 mb-1">Softdrinks</h5>
+                      <p class="mb-1">₱30.00</p>
+                      <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
+                </div>
+                <div class="col-lg-3 text-center sample shadow">
+                  <div class="inner"><img src="/ASSET/images.jpeg"alt=""class="d-block mx-auto h-50 w-60 img-fluid mt-3 rounded"/></div>
+                        <h5 class="mt-4 mb-1">Shake</h5>
+                        <p class="mb-1">₱30.00</p>
+                        <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
+                  </div>
       </div>
-
-    <!-- Display Item -->
-    <ul class="list-group" id="shoppingList"></ul>
     </div>
-
-    <script src="ASSET/JS/index.js"></script>
-  </body>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="JS/index.js"></script>
+</body>
 </html>
