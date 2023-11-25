@@ -12,18 +12,21 @@
         max-width: 1000px;
         margin-top: 1%;
       }
-      .row{
-        gap: 25px;
-        margin-bottom: 25px;
-      }
-      .sample {
-        background: #9BBEC8;
+      .center {
+        background: #B0A695;
         color: white !important;
-        border: 1px solid black;
-        border-bottom-right-radius: 30px;
+        border: 1px solid #B0A695;
+        border-bottom-right-radius: 10px;
         width: 230px;
-        height: 280px;
+        height: 260px;
         margin: auto;
+        margin-top: 40px;
+      }
+      img{
+        margin-top: 10px;
+      }
+      h5, p{
+        color: black;
       }
       /* button{
         background: palegoldenrod;
@@ -34,16 +37,17 @@
       .inner:hover img {
         transform: scale(1.5);
       } */
-      #gallery-modal .modal-img{
+      /* #gallery-modal .modal-img{
         width: 100%;
-      }
-      h5, p{
-        color: black;
-      }
+      } */
+            /* .row{
+        gap: 25px;
+        margin-bottom: 25px;
+      } */
     </style>
 </head>
 <body>
-    <div class="container gallery-modal">
+    <!-- <div class="container gallery-modal">
         <div class="row ">
             <div class="col-lg-3 text-center sample shadow">
               <div class="inner"><img src="/ASSET/images.jpeg" alt="" class="img-fluid mt-3 rounded" id="triggerImage"/></div>
@@ -69,10 +73,10 @@
                           <p class="mb-1">₱200.00</p>
                           <button class="btn btn-default btn-primary rounded-pill">Order Now</button>
                     </div>
-    </div>
+    </div> -->
 
 <!-- 1st Modal -->
-<div class="modal fade" id="enlargeImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="enlargeImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -89,7 +93,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- 2nd Modal -->
 <!-- <div class="modal fade" id="showQuantity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -153,7 +157,93 @@
 </div> -->
 
 
-    <script src="/ASSET/JS/bootstrap.js"></script>
-    <script src="/ASSET/JS/index.js"></script>
+
+<!-- large -->
+<!-- <div class="row ">
+  <div class="col-lg-6 text-center sample">
+    <div><img src="" alt="" class="img-fluid"/></div>
+          <h5 class="mt-4 mb-1">Box</h5>
+          <p class="mb-1">1</p>
+    </div>
+    <div class="col-lg-6 text-center sample ">
+      <div><img src=""alt=""class="img-fluid"/></div>
+            <h5 class="mt-4 mb-1">Box</h5>
+            <p class="mb-1">2</p>
+      </div>
+      </div> -->
+<!-- small -->
+
+
+<!-- image -->
+<div class="container">
+      <div class="row ">
+        <div class="col-lg-6 text-center center">
+        <img src="/ASSET/Goku.jpg" alt="" class="img-fluid img-thumbnail" id="Image" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <h4>IMAGE</h4>
+        <p>1</p>
+        <button class="btn btn-default btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Button">Order Now</button>
+        </div>
+
+        <div class="col-lg-6 text-center center ">
+        <img src="/ASSET/Goku.jpg" alt="" class="img-fluid img-thumbnail" id="Image" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <h4>IMAGE</h4>
+        <p>2</p>
+        <button class="btn btn-default btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Button">Order Now</button>
+        </div>
+      </div>
+</div>
+<!-- end -->
+
+<!-- image modal -->
+<div class="modal fade" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Image Description</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <img src="" alt="" id="modalImage" class="img-fluid img-thumbnail">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
+<!-- button Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Product Description</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <input type="number">
+          <p>Quantity</p>
+          <p>Price : P50</p>
+        </form>
+        <div>
+        <div><img src="/ASSET/Goku.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
+
+<script src="/ASSET/JS/bootstrap.js"></script>
+<script src="/ASSET/JS/index.js"></script>
 </body>
 </html>
